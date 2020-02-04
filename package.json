@@ -1,0 +1,34 @@
+{
+  "name": "sst-protractor",
+  "version": "1.0.0",
+  "description": "Framework for Protractor",
+  "main": "protractor.conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@types/node": "^13.5.0",
+    "@types/winston": "^2.4.4",
+    "jasmine": "^3.5.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.4.2",
+    "protractor-html-reporter-2": "^1.0.4",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.5.1",
+    "@types/jasminewd2": "^2.0.8"
+  },
+  "scripts": {
+    "webdriver-update": "./node_modules/protractor/bin/webdriver-manager update",
+    "test": "protractor protractor.conf.js"
+  },
+  "keywords": [
+    "Protractor"
+  ],
+  "author": "Mathew Carrigan",
+  "license": "ISC"
+}
