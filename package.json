@@ -24,7 +24,9 @@
   },
   "scripts": {
     "webdriver-update": "./node_modules/protractor/bin/webdriver-manager update",
-    "test": "protractor protractor.conf.js"
+    "pretest": "docker-compose -f docker-compose.yml up -d && sleep 10",
+    "test": "protractor protractor.conf.js",
+    "posttest": "docker-compose down"
   },
   "keywords": [
     "Protractor"
